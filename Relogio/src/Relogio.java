@@ -16,6 +16,15 @@ public class Relogio {
 
     }
 
+
+    public void reiniciaRelogio() {
+
+        this.hora = 0;
+        this.minuto = 0;
+        this.segundo = 0;
+
+    }
+
     public void setHora(int hora){
         this.hora = hora;
     }

@@ -5,7 +5,7 @@ import org.junit.Test;
 public class TesteRelogio {
     
     @Test
-    public void teste() {
+    public void testeCriacaoRelogio() {
         
         
 
@@ -22,14 +22,25 @@ public class TesteRelogio {
         assertEquals(5, segundo);
         
 
-        relogio1.reiniciaRelogio();
+        
+    }
+        
+    @Test
+    public void testeReiniciaRelogio() {
+
+        Relogio relogio2 = new Relogio(10, 15, 5);
+
+        relogio2.reiniciaRelogio();
+
+        int hora = relogio2.getHora();
+        int minuto = relogio2.getMinuto();
+        int segundo = relogio2.getSegundo();
 
         assertEquals(0, hora);
         assertEquals(0, minuto);
         assertEquals(0, segundo);
 
-        
-
     }
+    
 
 }
