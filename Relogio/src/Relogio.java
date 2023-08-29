@@ -4,7 +4,17 @@ public class Relogio {
 
     public Relogio(int hora, int minuto, int segundo) {
         
-        this.hora = hora;
+        if( hora>=24 || minuto>=60 || segundo>=60 || hora<0 || minuto<0 || segundo<0) {
+            
+            this.hora = 0;
+            this.minuto = 0;
+            this.segundo = 0;
+            
+        }
+
+        else
+
+        this.hora = hora;   
         this.minuto = minuto;
         this.segundo = segundo;
 
@@ -13,7 +23,6 @@ public class Relogio {
     public Relogio() {
 
     }
-
 
     public void reiniciaRelogio() {
 
