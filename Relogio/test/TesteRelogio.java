@@ -22,6 +22,14 @@ public class TesteRelogio {
         assertEquals(5, segundo);
         
 
+        relogio1.reiniciaRelogio();
+
+        assertEquals(0, hora);
+        assertEquals(0, minuto);
+        assertEquals(0, segundo);
+
+        
+
     }
 
 }

@@ -1,4 +1,5 @@
 public class Relogio {
+    
     private int hora, minuto, segundo;
 
     public Relogio(int hora, int minuto, int segundo) {
@@ -8,6 +9,10 @@ public class Relogio {
         this.segundo = segundo;
 
 
+
+    }
+
+    public Relogio() {
 
     }
 
