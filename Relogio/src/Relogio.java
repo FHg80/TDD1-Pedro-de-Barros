@@ -8,8 +8,6 @@ public class Relogio {
         this.minuto = minuto;
         this.segundo = segundo;
 
-
-
     }
 
     public Relogio() {
